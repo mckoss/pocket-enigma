@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- All image positioning based on  1024 x 1200 Enigma Machine image file -->
+	
+	<!-- Rotor window positioning -->
+    <dimen name="y_rotors">300px</dimen>
+    
+    <dimen name="x_left_rotor">310px</dimen>
+    <dimen name="x_center_rotor">410px</dimen>
+    <dimen name="x_right_rotor">510px</dimen>
+    
+    <dimen name="dx_rotor">60px</dimen>
+    <dimen name="dy_rotor">88px</dimen>
+    
+    <!-- Rotor spinner control size -->
+    <dimen name="dx_spinner">104px</dimen>
+    <dimen name="dy_spinner">289px</dimen>
+    
+    <!--  Lights overlay position -->
+    <dimen name="y_letters">520px</dimen>
+    <dimen name="dy_letters">199px</dimen>
+    <dimen name="x_letters">128px</dimen>
+    <dimen name="dx_letters">785px</dimen>
+    
+    <!-- Keyboard layout positioning -->
+    <dimen name="x_P_key">32px</dimen>
+    <dimen name="y_P_key">985px</dimen>
+    <dimen name="dx_key">73px</dimen>
+    <dimen name="dy_key">76px</dimen>
+   	<dimen name="dx_right_key">108px</dimen>
+   	<dimen name="dx_up_key">-40px</dimen>
+   	<dimen name="dy_up_key">-103px</dimen>
+   	
+ 	<!-- Light layout positioning -->
+    <dimen name="x_P_light">103px</dimen>
+    <dimen name="y_P_light">674px</dimen>
+    <dimen name="dx_light">58px</dimen>
+    <dimen name="dy_light">58px</dimen>
+   	<dimen name="dx_right_light">92px</dimen>
+   	<dimen name="dx_up_light">-33px</dimen>
+   	<dimen name="dy_up_light">-82px</dimen>
+   	
+   	<!-- Cover screw locations -->
+  	<dimen name="y_screw">679px</dimen>
+   	<dimen name="x_left_screw">26px</dimen>
+   	<dimen name="x_right_screw">954px</dimen>
+   	<dimen name="dx_screw">47px</dimen>
+   	<dimen name="dy_screw">47px</dimen>
+</resources>

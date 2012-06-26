@@ -1,0 +1,60 @@
+Todo:
+
+- Synch enigma machine state between Sim and Message tabs
+  - Position changes in sim don't reflect Settings changes
+- Message view
+  - append to Input from main sim
+  3 add labels: Input, Output
+  - Send button
+  6 Reset button
+  4 Send SMS
+  5 Send email
+1 Application icon
+2 Tab icons
+- Simulator
+  - Change lid and cover opening to swipe effect
+  X Open internal cover to reveal insides (touch either cover screw)
+  X Display rotor settings
+  X Change rotor settings (swipe)
+  X Display depressed key encoding
+  X min display letter - 1 second
+  4 Display typed letter
+  X Resize images to save space
+  X Overlay mask of windows is wrong color! (jpg fix)
+- Settings
+  - BUG: Ring settings do not seem to be working (turn over point wrong).
+  - Use Scrolling view so keyboard does not obliterate tabs
+X Tab names: Enigma, Message, Settings, Info
+X How to enable adjusting of media volume (not ringer volume)
+  when running.
+X Settings layout
+	- Rotors
+	- Rings
+	- Start
+	- Plugboard
+X Simulator layout
+	- Text output field
+	- Rotor display
+	- Android keyboard in alpha-only mode? Fixed?
+X Port Enigma Encryption Code from JavaScript
+X Handle Key events
+X Lock to portrait orientation
+
+Later ToDo:
+
+- Plugboard settings graphically
+- 3D view mode - walk around machine is 3 states:
+  - Lid Closed
+  - Lid Open
+  - Cover Open
+  - Animate between states using 3D library
+  - Pan/tilt/zoom
+  - Augmented reality view - make it look like it is sitting on a table
+    in view of the camera.
+
+Android questions:
+
+- Can I put TabHost in main.xml directly, instead of creating it on the fly as
+  was done in ApiDemos?
+- Why isn't the Layout Editor working in eclipse?
+

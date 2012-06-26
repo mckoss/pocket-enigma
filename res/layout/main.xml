@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <org.startpad.android.enigma.EnigmaView android:id="@+id/sim"
+       	android:layout_width="fill_parent"
+       	android:layout_height="fill_parent"
+       	android:scaleType="fitXY"
+       	android:background="@drawable/lid"/>
+
+    <LinearLayout android:id="@+id/encoder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        
+        <EditText android:id="@+id/input"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:capitalize="characters"
+        	android:hint="Input message"
+        	android:singleLine="true"/>
+        	
+        <TextView android:id="@+id/output"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="30sp"/>
+        	
+        <ToggleButton android:id="@+id/group_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textOn="Group Letters"
+            android:textOff="Group Letters"/>
+        
+    </LinearLayout>
+        
+    <LinearLayout android:id="@+id/settings"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+        <TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="30sp"
+        	android:text="Rotors:"/>
+        	
+       	<LinearLayout
+       		android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:orientation="horizontal"
+       		android:layout_gravity="center_horizontal"
+       		android:padding="5dp"
+       		>
+       		
+	        <Spinner
+	        	android:id="@+id/spn_rotors_1"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:prompt="@string/rotor_prompt"
+	        	android:drawSelectorOnTop="true"
+	        	/>
+	        	
+	        <Spinner
+	        	android:id="@+id/spn_rotors_2"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:prompt="@string/rotor_prompt"
+	        	android:drawSelectorOnTop="true"
+	        	/>
+	        	
+	        <Spinner
+	        	android:id="@+id/spn_rotors_3"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:prompt="@string/rotor_prompt"
+	        	android:drawSelectorOnTop="true"
+	        	/>
+       	</LinearLayout>
+       	
+        <TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="30sp"
+        	android:text="Start:"/>
+        	
+       	<LinearLayout
+       		android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:orientation="horizontal"
+       		android:layout_gravity="center_horizontal"
+       		android:padding="5dp"
+       		>
+        
+	        <Spinner
+	        	android:id="@+id/spn_start_1"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:prompt="@string/start_prompt"
+	        	android:drawSelectorOnTop="true"
+	        	/>
+	        	
+	        <Spinner
+	        	android:id="@+id/spn_start_2"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:prompt="@string/start_prompt"
+	        	android:drawSelectorOnTop="true"
+	        	/>
+	        	
+	        <Spinner
+	        	android:id="@+id/spn_start_3"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:prompt="@string/start_prompt"
+	        	android:drawSelectorOnTop="true"
+	        	/>
+	        	
+       	</LinearLayout>
+       	
+        <TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="30sp"
+        	android:text="Rings:"/>
+        	
+       	<LinearLayout
+       		android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:orientation="horizontal"
+       		android:layout_gravity="center_horizontal"
+       		android:padding="5dp"
+       		>
+        
+	        <Spinner
+	        	android:id="@+id/spn_rings_1"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:prompt="@string/ring_prompt"
+	        	android:drawSelectorOnTop="true"
+	        	/>
+	        	
+	        <Spinner
+	        	android:id="@+id/spn_rings_2"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:prompt="@string/ring_prompt"
+	        	android:drawSelectorOnTop="true"
+	        	/>
+	        	
+	        <Spinner
+	        	android:id="@+id/spn_rings_3"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:prompt="@string/ring_prompt"
+	        	android:drawSelectorOnTop="true"
+	        	/>
+	        	
+       	</LinearLayout>
+       	
+	    <TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="30sp"
+        	android:text="Plugboard:"/>
+        	
+        <EditText android:id="@+id/plugboard"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:capitalize="characters"
+        	android:hint="Sequence of letter pairs, e.g. AB CD"
+        	android:singleLine="true"/>
+
+    </LinearLayout>
+    
+    <WebView android:id="@+id/enigma_info"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        />
+
+</FrameLayout>
